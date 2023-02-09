@@ -82,7 +82,7 @@ const Post: React.FC<PostProps> = (props) => {
 	return (
 		<>
 			<Head>
-				<meta property="og:title" content={"&nbsp;"} />
+				<meta property="og:title" content='<span style="display:none">Hello</span>'/>
 				<link rel="canonical" href={` `} />
 				<meta property="og:description" content={" "} />
 				<meta property="og:url" content={` `} />
