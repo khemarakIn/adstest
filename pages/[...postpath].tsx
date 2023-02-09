@@ -83,9 +83,9 @@ const Post: React.FC<PostProps> = (props) => {
 		<>
 			<Head>
 				<meta property="og:title" content={" "} />
-				<link rel="canonical" href={`https://${host}/${path}`} />
+				<link rel="canonical" href={` `} />
 				<meta property="og:description" content={" "} />
-				<meta property="og:url" content={`https://${host}/${path}`} />
+				<meta property="og:url" content={` `} />
 				<meta property="og:type" content={" "} />
 				<meta property="og:locale" content={" "} />
 				<meta property="og:site_name" content={" "} />
