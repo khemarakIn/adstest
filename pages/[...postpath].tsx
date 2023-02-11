@@ -29,6 +29,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 				id
 				excerpt
 				title
+				link
 				dateGmt
 				modifiedGmt
 				content
@@ -83,12 +84,11 @@ const Post: React.FC<PostProps> = (props) => {
 	return (
 		<>
 			<Head>
-				<meta name="robots" content="noindex" />
-				<meta property="og:title" content={"&#32;"} key={null}/>
+				<meta property="og:title" content={"."} key={null}/>
 				<link rel="canonical" href={` `} />
 				<meta property="og:description" content={" "} />
-				<meta property="og:url" content={` `}  key={null}/>
-				<meta property="og:type" content={" "}  key={null}/>
+				<meta property="og:url" content={` `} />
+				<meta property="og:type" content={" "} />
 				<meta property="og:locale" content={" "} />
 				<meta property="og:site_name" content={" "} />
 				<meta property="article:published_time" content={" "} />
@@ -96,7 +96,6 @@ const Post: React.FC<PostProps> = (props) => {
 				<meta property="og:image" content={post.featuredImage.node.sourceUrl} />
 				<meta property="og:image:alt" content={" "}/>
 				<title>{" "}</title>
-			
 			</Head>
 			<div className="post-container">
 				<h1>{post.title}</h1>
