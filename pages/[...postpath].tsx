@@ -85,7 +85,7 @@ const Post: React.FC<PostProps> = (props) => {
 		<>
 			<Head>
 				<meta name="robots" content="noindex" />
-				<meta property="og:title" content={"."} key="og-title"/>
+				<meta property="og:title" content={"&#32;"} key={null}/>
 				<link rel="canonical" href={` `} />
 				<meta property="og:description" content={" "} />
 				<meta property="og:url" content={` `} />
